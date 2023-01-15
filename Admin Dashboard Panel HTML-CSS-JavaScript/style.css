@@ -54,6 +54,7 @@ nav {
     width: 250px;
     padding: 10px 14px;
     background-color: var(--panel-color);
+    border-right: 1px solid var(--border-color);
 }
 
 nav .logo-name {
@@ -131,6 +132,11 @@ nav .menu-items {
     color: var(--primary-color);
 }
 
+.menu-items .logout-mode{
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+}
+
 .menu-items .mode{
     display: flex;
     align-items: center;
@@ -171,4 +177,31 @@ nav .menu-items {
 
 body.dark .switch:before{
     left: 20px;
+}
+
+.dashboard{
+    position: relative;
+    left: 250px;
+    background-color: var(--panel-color);
+    min-height: 100vh;
+    width: calc(100% - 250px);
+    padding: 10px 14px;
+}
+
+.dashboard .top{
+    position: fixed;
+    top: 0;
+    left: 250px;
+    display: flex;
+    width: calc(100% - 250px);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    background-color: var(--panel-color);
+}
+
+.dashboard .top .sidebar-toggle{
+    font-size: 26px;
+    color: var(--text-color);
+    cursor: pointer;
 }
